@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bus Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="#" />
+    <!-- import Leaflet css  file from the specified URL.-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <!-- import the Leaflet JavaScript library and leaflet-rotatedmarker plugin from the specified URLs -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <!-- import leaflet-rotatedmarker library-->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-rotatedmarker@0.2.0/leaflet.rotatedMarker.min.js"></script>
+    <!-- load in your custom code but wait until the DOM is fully loaded before executing (defer) -->
+    <script src='main.js' defer></script>
+   
+
+
+    <!-- margin: 0; padding: 0: Resets the margin and padding for all elements to zero. 
+        html, body { height: 100%; }: Sets the height of the HTML and body elements to 100% to ensure they fill the viewport.
+        #theMap { width:100%; height:100%; }: Defines the dimensions of the map container with the ID theMap.
+    -->
+    <style>
+        * { margin: 0; padding: 0; } 
+        html, body { height: 100%; }
+        #theMap { width:100%; height:100%; }
+    </style>
+</head>
+<body>
+    <div id="theMap"></div>
+</body>
+</html>
